@@ -1,26 +1,65 @@
 import styled from "styled-components";
 
+const media = {
+  tablet: "@media(max-width: 1270px)",
+};
+
 export const Container = styled.div`
   position: relative;
   width: 1250px;
   height: 640px;
+  ${media.tablet} {
+    width: 100vw;
+    height: 100vh;
+  }
 `;
 
 export const Logo = styled.img`
   position: absolute;
   top: -28px;
   left: 0px;
+  z-index: 105;
+
+  ${media.tablet} {
+    top: 50px;
+    left: 40px;
+  }
 `;
 
 export const HostPicture = styled.img`
   float: right;
   z-index: -5;
+  ${media.tablet} {
+    display: none;
+  }
+`;
+
+export const HostPictureMobile = styled.img`
+  display: none;
+`;
+
+export const HostPictureTablet = styled.img`
+  display: none;
+  position: absolute;
+  right: 0;
+
+  ${media.tablet} {
+    display: block;
+  }
 `;
 
 export const Dots = styled.img`
   position: absolute;
   bottom: -52px;
   right: 0px;
+
+  ${media.tablet} {
+    bottom: auto;
+    left: 15px;
+    z-index: 55;
+    top: 920px;
+    right: auto;
+  }
 `;
 
 export const SmallCard = styled.div`
@@ -31,6 +70,14 @@ export const SmallCard = styled.div`
   height: 509px;
   background-color: #121725;
   padding-top: 81px;
+
+  ${media.tablet} {
+    bottom: auto;
+    top: 258px;
+    left: 40px;
+    z-index: 55;
+    right: auto;
+  }
 `;
 
 export const IconContainer = styled.div`

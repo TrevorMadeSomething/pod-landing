@@ -2,6 +2,7 @@ import {
   Container,
   Logo,
   HostPicture,
+  HostPictureTablet,
   Dots,
   SmallCard,
   GreenTitle,
@@ -24,6 +25,7 @@ export default function App() {
       <Container>
         <Logo src="/assets/desktop/logo.svg" />
         <HostPicture src="/assets/desktop/image-host.jpg" />
+        <HostPictureTablet src="/assets/mobile/image-host.jpg" />
         <Dots src="/assets/desktop/bg-pattern-dots.svg" />
         <SmallCard>
           <GreenTitle>Publish your podcasts</GreenTitle>
